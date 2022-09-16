@@ -1,0 +1,17 @@
+const A = [-6, -91, 1011, -100, -22, 0, 1, 473, 84]; /* Array of numbers */
+
+const multiplesOf4 = []; /* Empty array containing multiples of number 4 */
+
+A.map((number) => { /* Add each number that is a multiple of 4 into the 'multiplesOf4' array */
+    if (number % 4 === 0) {
+        multiplesOf4.push(number);
+    }else{
+        if (multiplesOf4!=[]) {
+            console.log("There is 6 numbers that does not match with our rulse.")
+        }
+    }
+});
+
+multiplesOf4.sort((a, b) => { return a - b }); /* Sort 'multiplesOf4' array (ascending) */
+
+console.log(multiplesOf4.pop()); /* Log the biggest multiple of 4 in the 'multiplesOf4' array to the console */
