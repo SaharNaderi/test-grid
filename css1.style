@@ -1,0 +1,42 @@
+.container {
+    display: grid;
+    width: 100%;
+    grid-template-areas:
+      "navbar"
+      "hero"
+      "sidebar  content"
+      "footer";
+    Grid-template-rows : 2fr 6fr 6fr 5fr ;
+  grid-template-columns: repeat(auto-fill, 1fr);
+  }
+  
+  .navbar {
+    
+  grid-column-start: 1;
+  grid-column-end: 5;
+  background-color: purple;
+   
+  }
+  .hero {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    background-color: pink;
+    
+  }
+  .content {
+    grid-column-start: 2;
+    grid-column-end: 5;
+    background-color: red;
+  }
+  .sidebar {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    background-color: lightblue;
+              
+    
+  }
+  .footer {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    background-color: yellow;
+           }
