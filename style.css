@@ -7,36 +7,36 @@
       "sidebar  content"
       "footer";
     grid-template-rows: 50px 1fr 30px;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   }
   
   .navbar {
   grid-column-start: 1;
-  grid-column-end: 4;
+  grid-column-end: 5;
       background-color: purple;
       height: 50px;
   }
   .hero {
     grid-column-start: 1;
-    grid-column-end: 4;
+    grid-column-end: 5;
       background-color: pink;
       height: 80px;
   }
   .content {
     grid-column-start: 2;
-    grid-column-end: 4;
+    grid-column-end: 5;
       background-color: red;
   }
   .sidebar {
-   
+    grid-column-start: 1;
+    grid-column-end: 2;
       background-color: lightblue;
               width:'20%';
       height: auto;
   }
   .footer {
-    grid-column-start: 3;
+    grid-column-start: 2;
     grid-column-end: 4;
       background-color: yellow;
       width: '60%';
   }
-  
